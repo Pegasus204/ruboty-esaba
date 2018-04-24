@@ -1,4 +1,6 @@
-require "ruboty/esaba/version"
+# frozen_string_literal: true
+
+require 'ruboty/esaba/version'
 
 module Ruboty
   module Esaba
