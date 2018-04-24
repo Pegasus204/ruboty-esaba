@@ -1,7 +1,3 @@
-require "ruboty/esaba/version"
+# frozen_string_literal: true
 
-module Ruboty
-  module Esaba
-    # Your code goes here...
-  end
-end
+require 'ruboty/esaba/version'
