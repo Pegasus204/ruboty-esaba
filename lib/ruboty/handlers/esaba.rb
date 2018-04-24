@@ -10,7 +10,7 @@ module Ruboty
 
       def esaba(message)
         if room(message.from) =~ room_filter
-          message.reply ENV['ESABA_URL_PREFIX'] + message[:id]
+          message.reply '──=≡=͟͟͞͞(\( ⁰⊖⁰)/) )  ' + ENV['ESABA_URL_PREFIX'] + message[:id]
         end
       end
 
