@@ -2,7 +2,7 @@ module Ruboty
   module Handlers
     class Esaba < Base
       on(
-        /.*esa\.io\/posts\/(?<id>\d+)/i,
+        /.*esa\.io\/posts\/(?<id>\d+)/im,
         name: 'esaba',
         description: 'return esaba URL',
         all: true
