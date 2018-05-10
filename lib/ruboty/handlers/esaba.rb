@@ -10,11 +10,17 @@ module Ruboty
 
       def esaba(message)
         if room(message.from) =~ room_filter
-          message.reply '──=≡=͟͟͞͞(\( ⁰⊖⁰)/) )  ' + ENV['ESABA_URL_PREFIX'] + message[:id]
+          if message.body =~ domain_filter
+            message.reply '──=≡=͟͟͞͞(\( ⁰⊖⁰)/) )  ' + ENV['ESABA_URL_PREFIX'] + message[:id]
+          end
         end
       end
 
       private
+
+      def domain_filter
+        Regexp.new ENV['ESABA_DOMAIN_FILTER'] + '.esa.io'
+      end
 
       def room_filter
         Regexp.new ENV['ESABA_ROOM_FILTER']
